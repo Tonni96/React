@@ -9,8 +9,8 @@ export const Navbar = () => {
 
             <ul className="listContainer">
                 <li className="list">Quienes somos?</li>
-                <li className="list">Productos</li>
-                <li className="list">Contacto</li>
+                <li className="list">semi-amargo</li>
+                <li className="list">Especialidades</li>
             </ul>
 
             <LiaOpencart size={25}/>
