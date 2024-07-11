@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 import { useState, useEffect} from "react";
+=======
+import ItemList from "./itemList";
+import { products } from "../../products";
+import { useState, useEffect } from "react";
+>>>>>>> clase-6
 
+const ItemListContainer = () => {
+  // una peticion que me traiga los productos del backend
 
+<<<<<<< HEAD
 const ItemListContainer = ({greeting}) => {
     
     const [numero, setNumero] = useState (0);
@@ -26,3 +35,32 @@ return (
 };
 
 export default ItemListContainer;    
+=======
+    const [items, setItems] = useState([]);
+    const [error, setError] = useState({});
+
+    useEffect(() => {
+        const getProducts = new Promise((resolve, reject) => {
+        let x = true;
+        if (x) {
+            resolve(products);
+        } else {
+            reject({ message: "error", codigo: "404" });
+        }
+        });
+
+    // manejar la promesa
+        getProducts
+        .then((res) => {
+            setItems(res);
+        })
+        .catch((error) => {
+            setError(error);
+        });
+    }, []);
+
+    return <ItemList items={items} />;
+};
+
+export default ItemListContainer;
+>>>>>>> clase-6
