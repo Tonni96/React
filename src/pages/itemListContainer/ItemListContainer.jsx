@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-import { useState, useEffect} from "react";
-=======
 import ItemList from "./itemList";
-import { products } from "../../products";
+import { products } from "../../Products";
 import { useState, useEffect } from "react";
->>>>>>> clase-6
+
 
 const ItemListContainer = () => {
   // una peticion que me traiga los productos del backend
 
-<<<<<<< HEAD
 const ItemListContainer = ({greeting}) => {
     
     const [numero, setNumero] = useState (0);
@@ -33,9 +29,8 @@ return (
     </div>  
 );
 };
+    
 
-export default ItemListContainer;    
-=======
     const [items, setItems] = useState([]);
     const [error, setError] = useState({});
 
@@ -63,4 +58,3 @@ export default ItemListContainer;
 };
 
 export default ItemListContainer;
->>>>>>> clase-6

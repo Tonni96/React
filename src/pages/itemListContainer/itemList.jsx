@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-const itemList = ({greeting, numero, sumar}) => {
-    
-}; 
-
-export default itemList;
-=======
-import { ProductCard } from "../../Component/productCard/productCard";
+import { ProductCard } from "../../Component/productCard/productcard";
 
 const ItemList = ({ items }) => {
     console.log(items);
@@ -26,4 +19,4 @@ const ItemList = ({ items }) => {
 };
 
 export default ItemList;
->>>>>>> clase-6
+
