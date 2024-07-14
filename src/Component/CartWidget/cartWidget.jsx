@@ -1,12 +1,17 @@
-import { LiaOpencart } from "react-icons/lia";
+
+import { Badge } from "@mui/material";
+import {Link} from "react-router-dom";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
-const cartwidget = () => {
+const Cartwidget = () => {
     return (
-        <div>
-            <LiaOpencart size={25}/>
-        </div>
+        <Link to="/cart">
+            <Badge badgeContent={0} color="primary" showZero>
+            <ShoppingCartIcon color="primary" />
+            </Badge>
+        </Link>
     )
 }
 
-export default cartwidget
+export default Cartwidget;
