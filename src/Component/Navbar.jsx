@@ -1,21 +1,26 @@
+import Cartwidget from "./CartWidget/cartWidget";
 import "./navbar.css";
-import { LiaOpencart } from "react-icons/lia";
+import { Link, Outlet } from "react-router-dom";
+
 
 
 export const Navbar = () => {
     return (
-        <div className="navbarContainer">
+        <div>
+            <>
+            <div className="navbarContainer">
+            <Link to= "/">
             <img className="imgLogo" src="https://res.cloudinary.com/dsk3j8k09/image/upload/v1718309660/logo_antoine_sr1ns8.jpg" alt="" />
-
+            </Link>
             <ul className="listContainer">
-                <li className="list">Quienes somos?</li>
-                <li className="list">semi-amargo</li>
-                <li className="list">Especialidades</li>
-                <li className="list">Semi-amargo</li>
-                <li className="list">especialidades</li>
+                <Link to="/category/semi-amargo"> semi-amargo</Link>
+                <Link to="/category/especialidades"> Especialidades </Link>
             </ul>
 
-            <LiaOpencart size={25}/>
+            <Cartwidget />
+            
+            </div>
+            </>
 
         </div>
     )

@@ -14,12 +14,22 @@
     gap: 30px;
     align-items: center;
 }
+
+.listContainer li{
+    border-radius: 10px;
+    border-color: white;
+}
 .list{
     list-style: none;
+    border-radius: 20px;
 }
 
 .imgLogo{
-    width: 60px;
+    width: 100px;
     height: auto;
     justify-items: end;
+}
+
+.navbarContainer { 
+    height: 150px;
 }
