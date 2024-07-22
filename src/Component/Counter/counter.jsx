@@ -1,4 +1,4 @@
-import { ProductCard } from "../productCard/productCard";
+import { ProductCard } from "../productCard/productcard";
 
 export const Counter = ({ restar, contador, sumar }) => {
     return (

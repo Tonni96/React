@@ -1,4 +1,4 @@
-import { ProductCard } from "../../Component/productCard/productCard";
+import { ProductCard } from "../../Component/productCard/productcard";
 
 const ItemList = ({ items }) => {
     console.log(items);

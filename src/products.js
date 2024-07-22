@@ -34,7 +34,7 @@ export let products = [
         description: "para un paladar mas exoigente en sabores contrastantes",
         img: "https://res.cloudinary.com/dsk3j8k09/image/upload/v1720540650/Talpa_ieemzw.jpg", 
         stock: 13,
-        category: "especialidades",
+        category: "espeialidades",
 
     },
 ]
