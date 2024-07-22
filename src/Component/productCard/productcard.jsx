@@ -3,26 +3,26 @@ import { Link } from "react-router-dom";
 
 export const ProductCard = ({ title, description, price, id, img}) => {
     return (
-        <Card sx={{ Width: 345 }}>
+        <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        sx={{ height: 140, width: "100%" }}
-        image={img}
+        sx={{ height: 140, width: "100%"}}
+        image= {img}
         title="green iguana"
-      />
+      /> 
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
+        <Typography variant="body2" color="Black">
+            {description}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {price}
+        <Typography variant="body2" color="Black">
+          ${price}
         </Typography>
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${id}`}>
-        <Button size="small" variant="outline">ver mas</Button>
+        <Button size="small">Ver mas </Button>
         </Link>
       </CardActions>
     </Card>
