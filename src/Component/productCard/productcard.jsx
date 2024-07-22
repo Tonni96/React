@@ -11,13 +11,13 @@ export const ProductCard = ({ title, description, price, id, img}) => {
       /> 
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {title}
+            <div>{title}</div>
         </Typography>
         <Typography variant="body2" color="Black">
-            {description}
+            <div>{description}</div>
         </Typography>
         <Typography variant="body2" color="Black">
-          ${price}
+          <div>${price}</div>
         </Typography>
       </CardContent>
       <CardActions>
