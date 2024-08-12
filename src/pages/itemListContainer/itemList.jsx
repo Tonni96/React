@@ -1,9 +1,9 @@
-import { ProductCard } from "../../Component/productCard/productcard";
+import { ProductCard } from "../../Component/productCard/productCard";
 
 const ItemList = ({ items }) => {
     console.log(items);
     return (
-        <div style={{ display: "flex", gap: "20px", marginTop: "40px", textAlign: "center"}}>
+        <div style={{ display: "flex", gap: "20px", marginTop: "40px", textAlign: "center", flexWrap: "wrap"}}>
         {items.map((elemento) => {
             return (
             <ProductCard
