@@ -1,4 +1,4 @@
-import { ProductCard } from "../productCard/productCard";
+import { ProductCard } from "../productCard/productcard";
 import { Button } from "@mui/material";
 
 export const Counter = ({ restar, contador, sumar, onAdd }) => {
